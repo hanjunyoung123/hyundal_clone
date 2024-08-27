@@ -58,9 +58,12 @@ window.addEventListener("load", function () {
     logoG.style.display = "block";
   });
   header.addEventListener("mouseleave", function () {
-    header.classList.remove("header-active");
+    if(scy < scActive){
+ header.classList.remove("header-active");
     logoW.style.display = "block";
     logoG.style.display = "none";
+    }
+   
   });
   
 });
